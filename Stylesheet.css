@@ -262,6 +262,123 @@ button {
         display: none;
     }
 }
-  /* ---------------------------------------------------Card---------------------------------------- */
+  /* ---------------------------------------------------Farhan---------------------------------------- */
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    max-width: 17rem;
+    margin: 20px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 17rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin: 2px 0;
+    padding: 0 5px;
+    font-size: small;
+    font-weight: 500;
+}
+
+.card .price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    color: #333;
+    font-size: small;
+    font-weight: bold;
+}
+
+.card .material-symbols-outlined {
+    margin-right: 2px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: larger;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        max-width: 15rem;
+    }
+
+    .card img {
+        width: 15rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        max-width: 12rem;
+    }
+
+    .card img {
+        width: 12rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+        }
 
    
