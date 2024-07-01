@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+.upperNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(61 51 51 / 87%);
+  font-size: small;
+  padding-left: 3rem;
+  flex-wrap: wrap;
+}
+
+.upperNav h4 {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.leftMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu div {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  color: white;
+}
+
+.menu img {
+  height: 20px;
+  width: 20px;
+}
+
+.logo img {
+  background-color: black;
+}
+
+.material-symbols-outlined {
+  margin-right: 5px;
+  margin-right: 15px;
+}
+
+.menu img.icon {
+  margin-right: 10px;
+}
+
+@media (max-width: 850px) {
+  .upperNav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-left: 0;
+  }
+
+  .menu {
+      justify-content: space-evenly;
+      width: 100%;
+  }
+
+  .menu div {
+      margin: 5px 0;
+  }
+
+  .leftMenu {
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .menu img {
+      display: none;
+  }
+}
+
+  /* ----------------------------Lower Menu---------------------- */
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    flex-wrap: wrap;
+}
+
+.left img {
+    height: 20px;
+    padding-left: 2rem;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    flex-wrap: wrap;
+}
+
+.loverMenu {
+    margin: 0 15px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right div {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.material-symbols-outlined {
+    margin-right: 5px; 
+}
+
+button {
+    padding: 8px 16px;
+    background-color: rgb(214, 20, 20);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.express-delivery {
+    border-radius: 3rem;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    white-space: nowrap;
+}
+
+.express-delivery p {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    white-space: nowrap;
+}
+
+.express-delivery h3 {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+.express-delivery .material-symbols-outlined {
+    margin-left: 5px;
+}
+
+.search {
+    width: 10rem;
+    border-bottom: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left img {
+        padding-left: 17rem;
+        margin-bottom: 10px;
+    }
+
+    .mid {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .loverMenu {
+        margin: 5px;
+    }
+
+    .right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .right div {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .express-delivery {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .mid {
+        flex-direction: column;
+    }
+
+    .loverMenu {
+        margin: 5px 0;
+    }
+
+    .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .express-delivery {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left, .mid, .right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .left img {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .mid {
+      display: flex;
+      justify-content: space-evenly;
+
+        /* flex-direction: row; */
+        
+    }
+
+    .loverMenu {
+        margin: 5px 0;
+    }
+
+    .search {
+      display: none;
+    }
+
+    .express-delivery {
+        display: none;
+    }
+}
+  /* ---------------------------------------------------Card---------------------------------------- */
+
+   
